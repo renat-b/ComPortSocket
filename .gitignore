@@ -1,0 +1,12 @@
+Debug/
+Release/
+src/CommonLibEmPulse/
+*.opensdf
+*.sdf
+*.suo
+ipch/
+x64/
+*.opensdf
+*.sdf
+*.suo
+*.vcxproj.user
