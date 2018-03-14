@@ -25,6 +25,27 @@
     <Filter Include="Source Files\ComPort">
       <UniqueIdentifier>{6472d4e9-fc84-4acb-a454-b5c481f7e413}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Transport">
+      <UniqueIdentifier>{cb66f64b-33cd-40ab-9306-3ebfd0d22bd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Transport\Interfaces">
+      <UniqueIdentifier>{72132b55-8877-4208-934c-f014b8bc517a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Transport\Commands">
+      <UniqueIdentifier>{b5d17198-1db0-4e58-88cf-d88ff851a54b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Transport">
+      <UniqueIdentifier>{01349c53-caf0-4617-88b1-eba20f873ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Transport\Commands">
+      <UniqueIdentifier>{d05a19f7-6848-4f72-8c26-275fde5e191b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{375cf45c-da0f-4f02-ad37-e7a3bad0070b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{ffad83b0-9c8b-4a16-a0f0-fafa42eff59c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\stdafx.cpp">
@@ -36,6 +57,30 @@
     <ClCompile Include="src\ComPort\ComPort.cpp">
       <Filter>Source Files\ComPort</Filter>
     </ClCompile>
+    <ClCompile Include="src\Transport\Commands\Command.cpp">
+      <Filter>Source Files\Transport\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Transport\Commands\Packet.cpp">
+      <Filter>Source Files\Transport\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Transport\Commands\Packets.cpp">
+      <Filter>Source Files\Transport\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CommonLibEmPulse\MemPack.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Transport\Commands\IndigoFrame.cpp">
+      <Filter>Source Files\Transport\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComPort\ComPortHandler.cpp">
+      <Filter>Source Files\ComPort</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CommonLibEmPulse\IndigoTimer.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CommonLibEmPulse\OutLogger.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\stdafx.h">
@@ -43,6 +88,33 @@
     </ClInclude>
     <ClInclude Include="src\ComPort\ComPort.h">
       <Filter>Header Files\ComPort</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Transport\Interfaces\ISocket.h">
+      <Filter>Header Files\Transport\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Transport\Commands\Command.h">
+      <Filter>Header Files\Transport\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Transport\Commands\Packet.h">
+      <Filter>Header Files\Transport\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Transport\Commands\Packets.h">
+      <Filter>Header Files\Transport\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CommonLibEmPulse\MemPack.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Transport\Commands\IndigoFrame.h">
+      <Filter>Header Files\Transport\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ComPort\ComPortHandler.h">
+      <Filter>Header Files\ComPort</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CommonLibEmPulse\IndigoTimer.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CommonLibEmPulse\OutLogger.h">
+      <Filter>Header Files\Common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

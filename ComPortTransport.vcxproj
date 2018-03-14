@@ -51,6 +51,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -66,6 +67,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -75,16 +77,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\CommonLibEmPulse\IndigoTimer.cpp" />
+    <ClCompile Include="src\CommonLibEmPulse\MemPack.cpp" />
+    <ClCompile Include="src\CommonLibEmPulse\OutLogger.cpp" />
     <ClCompile Include="src\ComPort\ComPort.cpp" />
+    <ClCompile Include="src\ComPort\ComPortHandler.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\Transport\Commands\IndigoFrame.cpp" />
+    <ClCompile Include="src\Transport\Commands\Command.cpp" />
+    <ClCompile Include="src\Transport\Commands\Packet.cpp" />
+    <ClCompile Include="src\Transport\Commands\Packets.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\CommonLibEmPulse\IndigoTimer.h" />
+    <ClInclude Include="src\CommonLibEmPulse\MemPack.h" />
+    <ClInclude Include="src\CommonLibEmPulse\OutLogger.h" />
     <ClInclude Include="src\ComPort\ComPort.h" />
+    <ClInclude Include="src\ComPort\ComPortHandler.h" />
     <ClInclude Include="src\stdafx.h" />
+    <ClInclude Include="src\Transport\Commands\IndigoFrame.h" />
+    <ClInclude Include="src\Transport\Commands\Command.h" />
+    <ClInclude Include="src\Transport\Commands\Packet.h" />
+    <ClInclude Include="src\Transport\Commands\Packets.h" />
+    <ClInclude Include="src\Transport\Interfaces\ISocket.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

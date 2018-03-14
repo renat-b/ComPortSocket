@@ -10,7 +10,7 @@ public:
     ComPort();
     ~ComPort();
 
-    bool     Read(uint8_t *data, uint32_t &size);
+    bool     Read(uint8_t *data, uint32_t &size) const;
     bool     Write(const uint8_t *data, uint32_t size) const;
 
     bool     ClearPort();
@@ -18,5 +18,5 @@ public:
     void     SetHandle(HANDLE handle);
     HANDLE   GetHandle() const;
 
-    DWORD    LastOS() const;
+    DWORD    LastErrorOS() const;
 };

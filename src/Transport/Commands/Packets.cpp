@@ -23,9 +23,9 @@ void Packets::Clear()
     m_packets.clear();
 }
 
-
 bool Packets::AddPacket(const Packet &packet)
 {
+    /*
     Packet *dst = packet.Clone();
 
     if (!dst)
@@ -40,8 +40,9 @@ bool Packets::AddPacket(const Packet &packet)
 	    dst = nullptr;
     }
     return r;
+    */
+    return false;
 }
-
 
 uint32_t Packets::Count() const
 {

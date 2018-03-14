@@ -9,7 +9,7 @@ ComPort::~ComPort()
 {
 }
 
-bool ComPort::Read(uint8_t *data, uint32_t &size)
+bool ComPort::Read(uint8_t *data, uint32_t &size) const
 {
     DWORD readed = 0, read;
 
@@ -67,7 +67,7 @@ HANDLE ComPort::GetHandle() const
     return m_handle;
 }
 
-DWORD ComPort::LastOS() const
+DWORD ComPort::LastErrorOS() const
 {
     return m_last_error;
 }
